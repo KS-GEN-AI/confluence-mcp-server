@@ -3,10 +3,7 @@
 import axios, {AxiosRequestConfig} from 'axios';
 import {Server} from "@modelcontextprotocol/sdk/server/index.js";
 import {StdioServerTransport} from "@modelcontextprotocol/sdk/server/stdio.js";
-import {
-    CallToolRequestSchema,
-    ListToolsRequestSchema,
-} from "@modelcontextprotocol/sdk/types.js";
+import {CallToolRequestSchema, ListToolsRequestSchema,} from "@modelcontextprotocol/sdk/types.js";
 
 /**
  * Configure your Confluence instance credentials and URL.
@@ -88,7 +85,7 @@ async function executeCQL(cql: string, limit: number): Promise<any> {
             limit
         };
 
-        const response = await axios.get(`${CONFLUENCE_URL}/rest/api/content/search`, {
+        const response = await axios.get(`${CONFLUENCE_URL}/wiki/rest/api/content/search`, {  // Updated URL
             headers: getAuthHeaders().headers,
             params
         });
@@ -108,7 +105,7 @@ async function executeCQL(cql: string, limit: number): Promise<any> {
  */
 async function getPageContent(pageId: string): Promise<any> {
     try {
-        const response = await axios.get(`${CONFLUENCE_URL}/rest/api/content/${pageId}?expand=body.storage`, {
+        const response = await axios.get(`${CONFLUENCE_URL}/wiki/rest/api/content/${pageId}?expand=body.storage`, {  // Updated URL
             headers: getAuthHeaders().headers
         });
 
@@ -119,6 +116,7 @@ async function getPageContent(pageId: string): Promise<any> {
         };
     }
 }
+
 
 /**
  * Function to get the authentication headers.
