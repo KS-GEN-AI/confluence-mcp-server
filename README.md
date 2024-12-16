@@ -1,53 +1,27 @@
-# Confluence communication server MCP Server
+Here's an updated version of the Confluence communication server documentation based on the new requirements to interact with Confluence using CQL and fetch page content:
 
-Talk to Confluence
+---
+
+# Confluence Communication Server MCP Server
+
+Interact with Confluence
 
 This is a TypeScript-based MCP server that provides tools to interact with Confluence. It demonstrates core MCP concepts by providing:
 
-- Tools for executing JQL queries
-- Tools for creating, editing, and deleting Confluence tickets
-- Tools for listing Confluence projects and statuses
+- Tools for executing CQL queries to search pages
+- Tools for retrieving the content of Confluence pages
 
 ## Features
 
 ## Confluence Tools
 
-### `execute_jql`
-- **Purpose**: Run a JQL query.
-- **Parameters**: `jql`, `number_of_results` (default: 1).
+### `execute_cql_search`
+- **Purpose**: Run a CQL query to search for Confluence pages.
+- **Parameters**: `cql`, `limit` (default: 10).
 
-### `get_only_ticket_name_and_description`
-- **Purpose**: Fetch ticket name and description.
-- **Parameters**: `jql`, `number_of_results` (default: 1).
-
-### `create_ticket`
-- **Purpose**: Create a Confluence ticket.
-- **Parameters**: `project.key`, `summary`, `description`, `issuetype.name`, `parent` (optional).
-
-### `list_projects`
-- **Purpose**: List Confluence projects.
-- **Parameters**: `number_of_results` (default: 1).
-
-### `delete_ticket`
-- **Purpose**: Delete a ticket.
-- **Parameters**: `issueIdOrKey`.
-
-### `edit_ticket`
-- **Purpose**: Modify a ticket.
-- **Parameters**: `issueIdOrKey`, `summary` (optional), `description` (optional), `labels` (optional), `parent` (optional).
-
-### `get_all_statuses`
-- **Purpose**: Retrieve all statuses.
-- **Parameters**: `number_of_results` (default: 1).
-
-### `assign_ticket`
-- **Purpose**: Assign a ticket to a user.
-- **Parameters**: `accountId`, `issueIdOrKey`.
-
-### `query_assignable`
-- **Purpose**: Find assignable users in a project.
-- **Parameters**: `project_key`.
-
+### `get_page_content`
+- **Purpose**: Fetch the content of a Confluence page.
+- **Parameters**: `pageId`.
 
 ## Development
 
@@ -82,9 +56,9 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
         "/PATH_TO_THE_PROJECT/build/index.js"
       ],
       "env": {
-        "CONFLUENCE_URL": "https://XXXXXXXX.atlassian.net",
+        "CONFLUENCE_URL": "https://XXXXXXXX.atlassian.net/wiki",
         "CONFLUENCE_API_MAIL": "Your email",
-        "CONFLUENCE_API_KEY": "KEY_FROM : https://id.atlassian.com/manage-profile/security/api-tokens"
+        "CONFLUENCE_API_KEY": "KEY_FROM: https://id.atlassian.com/manage-profile/security/api-tokens"
       }
     }
   }
