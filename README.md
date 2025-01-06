@@ -1,7 +1,3 @@
-Here's an updated version of the Confluence communication server documentation based on the new requirements to interact with Confluence using CQL and fetch page content:
-
----
-
 # Confluence Communication Server MCP Server
 
 Interact with Confluence
