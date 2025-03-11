@@ -7,6 +7,10 @@ This is a TypeScript-based MCP server that provides tools to interact with Confl
 - Tools for executing CQL queries to search pages
 - Tools for retrieving the content of Confluence pages
 
+<a href="https://glama.ai/mcp/servers/850t5hxya0">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/850t5hxya0/badge" alt="Confluence Communication Server MCP server" />
+</a>
+
 ## Features
 
 ## Confluence Tools
@@ -40,7 +44,7 @@ npm run watch
 
 To use with Claude Desktop, add the server config:
 
-On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
+On MacOS: `~/Library/Application Support/Claude/claude_desktop_config.json`  
 On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
 ```json
