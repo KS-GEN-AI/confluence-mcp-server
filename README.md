@@ -1,5 +1,7 @@
 # Confluence Communication Server MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@KS-GEN-AI/confluence-mcp-server)](https://smithery.ai/server/@KS-GEN-AI/confluence-mcp-server)
+
 Interact with Confluence
 
 This is a TypeScript-based MCP server that provides tools to interact with Confluence. It demonstrates core MCP concepts by providing:
@@ -41,6 +43,14 @@ npm run watch
 ```
 
 ## Installation
+
+### Installing via Smithery
+
+To install Confluence Communication Server MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@KS-GEN-AI/confluence-mcp-server):
+
+```bash
+npx -y @smithery/cli install @KS-GEN-AI/confluence-mcp-server --client claude
+```
 
 To use with Claude Desktop, add the server config:
 
