@@ -16,6 +16,10 @@ This is a TypeScript-based MCP server that provides tools to interact with Confl
 
 ## Features
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/ks-gen-ai-confluence-mcp-server).
+
 ## Confluence Tools
 
 ### `execute_cql_search`
