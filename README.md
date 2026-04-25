@@ -1,5 +1,6 @@
 # Confluence Communication Server MCP Server
 
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/KS-GEN-AI/confluence-mcp-server)](https://archestra.ai/mcp-catalog/ks-gen-ai__confluence-mcp-server)
 [![smithery badge](https://smithery.ai/badge/@KS-GEN-AI/confluence-mcp-server)](https://smithery.ai/server/@KS-GEN-AI/confluence-mcp-server)
 
 Interact with Confluence
